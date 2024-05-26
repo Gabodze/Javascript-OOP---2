@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Შექმნეით კლასი სახელად Rectangle. Შეიტანეთ ორი წევრი: height, width.
+    //  Კლასს უნდა გააჩნდეს მეტოდები, რომლებიც მოახდენენ წევრებში მნიშვნელობების შეტანას,
+    //  ეს მეტოდებია: set_height და set_width. Შემდეგ პროგრამაში მეტოდების გამოძხების შემდგომ 
+    // დაბეჭდეტ კლასის წევრების მნიშვნელობები
+
+    class rectangle {
+        heignt = "";
+        width = "";
+        set_height(){
+            this.height = "200px";
+        } 
+        set_width() {
+            this.width = "200px";
+        }
+
+        get_height(){
+            console.log(this.height);
+        }
+        get_width(){
+            console.log(this.width);
+        }
+    }
+    var object = new rectangle();
+    object.set_height();
+    object.set_width();
+    document.write(object.height + object.width)
+
+    </script>
+</body>
+</html>
